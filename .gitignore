@@ -1,0 +1,12 @@
+# Raw and processed data are re-created by the pipeline, so we do not store them
+data/
+.snakemake/
+
+# Python clutter
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Mac clutter
+.DS_Store
