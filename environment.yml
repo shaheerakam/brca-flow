@@ -1,0 +1,19 @@
+name: brca-flow
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pandas
+  - numpy
+  - matplotlib
+  - scikit-learn
+  - requests
+  - pytest
+  - snakemake
+  - graphviz
+  - pip
+  - pip:
+      - pydeseq2
+      - lifelines
+      - -e .
