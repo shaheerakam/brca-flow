@@ -1,0 +1,11 @@
+# Settings for the workflow. Change values here, not inside the scripts.
+max_samples: null
+random_seed: 42
+study_id: brca_tcga_pan_can_atlas_2018
+
+# ER status is estimated from PAM50 subtype because this study has no ER column (see Part 5.6).
+er_column: null
+er_from_subtype: true      # approximate. Say so in the report and README limitations.
+
+# Which gene to draw survival curves for. null = the top gene from differential expression.
+survival_gene: GATA3

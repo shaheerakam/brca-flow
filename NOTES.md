@@ -98,3 +98,31 @@ Gene: GATA3 (ENSG00000107485.18)
 Patients analysed: 59
 Deaths (events): 6
 Log-rank p-value: 0.5765
+
+## Full-dataset run
+
+Settings: max_samples null (all open-access primary tumors, one per patient). ER status approximated from PAM50 subtype.
+
+Positive controls: 5 of 5 passed.
+Differential expression: 16509 genes tested. 1567 were higher in ER-positive tumors and 1736 higher in ER-negative tumors (padj below 0.05, absolute log2 fold change above 1).
+
+QC summary:
+Samples with known ER status: 56
+ER_positive: 40
+ER_negative: 16
+Genes before filtering: 19962
+Genes after filtering:  16509
+Smallest library (millions of reads): 27.4
+Largest library (millions of reads):  91.3
+
+Survival summary:
+Gene: GATA3 (ENSG00000107485.18)
+Patients analysed: 59
+Deaths (events): 6
+Log-rank p-value: 0.5765
+
+GDC data release:
+  "data_release": "Data Release 46.0 - August 10, 2026",
+  "data_release_version": {
+
+PCA: ER-negative tumors again separate from ER-positive tumors along PC1, now with many more samples.
