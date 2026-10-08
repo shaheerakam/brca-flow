@@ -79,3 +79,22 @@ ENSG00000134830.6	4.352635221121162	2.1910789562612763e-45	C5AR2
 ENSG00000166535.20	-7.55105138326054	2.6009052125441374e-39	A2ML1
 ENSG00000120262.10	4.086931976670416	4.0069974715730915e-36	CCDC170
 ENSG00000082175.15	6.769998340633373	9.39212878004479e-34	PGR
+
+## Part 8: Survival analysis (60-tumor test run)
+
+### Kaplan-Meier curve (results/figures/km_gene.png)
+Gene: GATA3, chosen before looking at survival results, not selected from the data. Patients were split at the median GATA3 expression into a high group (n=30) and a low group (n=29). The log-rank test gave p = 0.577, so there is no significant difference in overall survival between the groups in this subset.
+
+The curves cross. The GATA3-high group drops earlier (steps at roughly 5, 10 and 33 months) and then stays flat at about 0.85. The GATA3-low group stays higher until about 56 months and then drops to about 0.69 by roughly 75 months. The low-expression curve ends near 107 months, and the high-expression curve extends to about 170 months. Because the curves cross and the test is not significant, I do not read this as evidence that GATA3 level affects survival.
+
+### Caveats
+- Very few deaths: each curve falls in only a handful of steps, so one patient moving changes the curve a lot. The later drop in the low group rests on few patients still at risk.
+- This is a 60-tumor test run. The result needs repeating on the larger or full dataset.
+- ER status was approximated from PAM50 subtype, and I did not adjust for ER status, stage or age, which all relate to survival.
+- Exploratory analysis. A non-significant result is still a result, and I did not try other genes to find a significant one.
+
+### Numbers from survival_summary.txt
+Gene: GATA3 (ENSG00000107485.18)
+Patients analysed: 59
+Deaths (events): 6
+Log-rank p-value: 0.5765

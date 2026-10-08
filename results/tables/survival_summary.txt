@@ -1,0 +1,4 @@
+Gene: GATA3 (ENSG00000107485.18)
+Patients analysed: 59
+Deaths (events): 6
+Log-rank p-value: 0.5765
