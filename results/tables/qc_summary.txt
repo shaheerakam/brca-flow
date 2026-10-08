@@ -1,0 +1,7 @@
+Samples with known ER status: 56
+ER_positive: 40
+ER_negative: 16
+Genes before filtering: 19962
+Genes after filtering:  16509
+Smallest library (millions of reads): 27.4
+Largest library (millions of reads):  91.3
